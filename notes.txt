@@ -1,0 +1,14 @@
+sh ver -> ver MAC addr de switch
+sh vlan 
+sh spanning-tree
+do show run -> mostrar spanning tree priority
+sh int -> show interfaces
+spanning-tree vlan 1 priority 0 -> influence priority of a switch in a VLAN
+
+On switches, all non-edge ports are trunk and edge ports are bound to a VLAN
+
+
+2.b) To disable Dynamic Trunking Protocol (DTP):
+Enter config-if for the interface
+switchport mode trunk
+switchport nonegotiate
